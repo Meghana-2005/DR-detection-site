@@ -1,5 +1,6 @@
 import React from 'react'
-import Navbar from './components/navbar/navbar'
+import Navbar from './components/Navbar/Navbar' 
+
 import Home from './components/Home/Home'
 import Ds from './components/DRstages/Ds'
 import Pd from './components/PredictDR/pd'
