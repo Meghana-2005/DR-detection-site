@@ -4,9 +4,9 @@ import Navbar from './components/Navbar/Navbar'
 
 import Home from './components/Home/Home'
 import Ds from './components/DRstages/Ds'
-import Pd from './components/PredictDR/pd'
-import C from './components/Caretips/c'
-import A from './components/AboutUs/a'
+import Pd from './components/PredictDR/Pd'
+import C from './components/Caretips/C'
+import A from './components/AboutUs/A'
 
 
 
