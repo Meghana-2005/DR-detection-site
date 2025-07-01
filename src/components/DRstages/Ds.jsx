@@ -12,17 +12,17 @@ const Ds = () => {
         <h>Stages Of DR</h>
       </div>
       
-      <div className='bg-white text-orange-600 mt-5 mb-5'>
+      <div className='bg-white text-orange-600 mt-5 mb-5 rounded-3xl'>
         <div className='py-4'>
           <img src={nodri} className='flex h-30 w-30 object-contain rounded-full justify-self-center'></img>
 
         </div>
         
         <h>no dr</h>
-        <p>Eye is healthy</p>
+        <p className='pb-2'>Eye is healthy</p>
       </div>
       <div className=' text-orange-500  md:grid grid-cols-2 gap-10 '>
-        <div className='bg-white mb-5 mt-5'>
+        <div className='bg-white mb-5 mt-5 rounded-3xl'>
           <div className='py-4'>
             <img src={mildi} className='flex h-30 w-30 object-contain rounded-full justify-self-center'></img>
 
@@ -33,7 +33,7 @@ const Ds = () => {
           <p className='pb-2'>Early stage with small areas of swelling in the blood vessels of the retina, often showing microaneurysms.</p>
 
         </div>
-        <div className='bg-white mb-5 mt-5'>
+        <div className='bg-white mb-5 mt-5 rounded-3xl'>
           <div className='py-4'>
             <img src={moderatei} className='flex h-30 w-30 object-contain rounded-full justify-self-center'></img>
 
@@ -48,7 +48,7 @@ const Ds = () => {
 
 
       <div className=' text-orange-600  md:grid grid-cols-2 gap-10 '>
-        <div className='bg-white mb-5 mt-5'>
+        <div className='bg-white mb-5 mt-5 rounded-3xl'>
           <div className='py-4'>
             <img src={severei} className='flex h-30 w-30 object-contain rounded-full justify-self-center'></img>
 
@@ -58,7 +58,7 @@ const Ds = () => {
           <p className='pb-2'>Many blood vessels are blocked, causing significant retinal damage, with higher risk of neovascularization.</p>
 
         </div>
-        <div className='bg-white mb-5 mt-5'>
+        <div className='bg-white mb-5 mt-5 rounded-3xl'>
           <div className='py-4'>
             <img src={poliferativei} className='flex h-30 w-30 object-contain rounded-full justify-self-center'></img>
 

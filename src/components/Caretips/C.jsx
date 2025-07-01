@@ -3,8 +3,8 @@ import React from 'react'
 const C = () => {
   return (
     <div className=' text-white font-semibold '>
-      <div className='bg-orange-600 flex-col justify-items-center py-3 px-5 '>
-        <h>CARE TIPS</h>
+      <div className='bg-orange-600 flex flex-col justify-items-center py-3 px-5 '>
+        <h className='text-center'>CARE TIPS</h>
         <p className='text-center'>There are things you can do to help keep your eyes healthy and make sure you are seeing your best:</p>
         <li>Eat a healthy, balanced diet. Your diet should include plenty or fruits and vegetables, especially deep yellow and green leafy vegetables. Eating fish high in omega-3 fatty acids, such as salmon, tuna, and halibut can also help your eyes.</li>
         <li>Maintain a healthy weight. Being overweight or having obesity increases your risk of developing diabetes. Having diabetes puts you at higher risk of getting diabetic retinopathy or glaucoma.</li>
