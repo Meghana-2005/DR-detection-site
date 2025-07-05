@@ -4,7 +4,7 @@ const Pd = () => {
   return (
     <div className='bg-white font-semibold text-center  flex justify-center '>
     <div className='mt-4 mb-4 ml-4 mr-4 '>
-      <div className='bg-orange-600 text-white py-5 px-5 rounded-3xl'>
+      <div className='bg-orange-600 text-white py-5 px-5 rounded-3xl shadow-md shadow-orange-600'>
         <h>Upload an image of your retina</h>
         <p>click on the submit button to know the RESULT</p>
         <div className='grid py-2'>
