@@ -3,10 +3,10 @@ import bg from '../../assets/bg.jpg'
 const Home = () => {
   return (
     <div className='bg-white pt-16 md:pt-24 text-orange-600 text-center font-semibold'>
-      <div className='md:grid grid-cols-2 place-content-center'>
+      <div className='md:grid grid-cols-[1.5fr_1fr] place-content-center'>
           
           
-          <div className='flex flex-col place-content-center justify-items-center py-10 px-4 '>
+          <div className='flex flex-col place-content-center justify-items-center py-10 px-4 text-xl'>
             <h>VISION CARE, LIFE CARE</h>
             <p className='text-center py-3'>A healthy lifestyle is key to managing diabetes, but what happens when diabetes silently damages your eyes? Diabetic Retinopathy (DR) is one of the leading causes of blindness among diabetic patients. Without early detection, it can progress undetected until significant vision loss occurs. Current diagnostic methods can be slow and costly, and sometimes, early signs are missed.
 
