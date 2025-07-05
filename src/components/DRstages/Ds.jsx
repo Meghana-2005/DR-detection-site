@@ -8,7 +8,7 @@ import poliferativei from '../../assets/poliferativei.png'
 
 const Ds = () => {
   return (
-    <div className='bg-orange-600 text-white text-center font-semibold ml-4 mr-4 '>
+    <div className='bg-orange-600 text-white text-center font-semibold ml-4 mr-4 overflow-x-hidden' id='dr-stages'>
       <div className='mt-2'>
         <h>Stages Of DR</h>
       </div>
