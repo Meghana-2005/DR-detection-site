@@ -20,7 +20,7 @@ const App = () => {
       
       
         <div id="h" className="scroll-mt-16 md:scroll-mt-24"><Home /></div>
-        <div id="d" className="scroll-mt-16 md:scroll-mt-24"><Ds /></div>
+        <div id="d" className="scroll-mt-14 md:scroll-mt-24"><Ds /></div>
         <div id="p" className="scroll-mt-14 md:scroll-mt-24"><Pd /></div>
         <div id="c" className="scroll-mt-14 md:scroll-mt-24"><C /></div>
         <div id="a" className="scroll-mt-14 md:scroll-mt-24"><A /></div>
