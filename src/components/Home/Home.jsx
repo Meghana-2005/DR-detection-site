@@ -12,7 +12,7 @@ const Home = () => {
 
             Now, with the power of AI-driven technology, early detection is more accessible than ever. Our innovative system uses advanced AI based models to analyze retinal images, accurately identifying the stages of DR. This approach allows healthcare providers to diagnose the condition early, enabling timely treatment and reducing the risk of severe vision impairment. By offering faster and more reliable results, the model aims to improve patient outcomes and ease the workload on medical professionals.</p>
           </div>
-          <div className='py-12 px-4 place-content-center'>
+          <div className='pb-12 md:py-12 px-4 place-content-center'>
             <img src={bg} className='h-30 w-30 object-contain rounded-full '></img>
       
           </div>
