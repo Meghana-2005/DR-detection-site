@@ -56,13 +56,7 @@ const App = () => {
     }
   }, [chatHistory]
 );
-useEffect(() => {
-  if (showChatbot) {
-    document.body.style.overflow = 'hidden'; 
-  } else {
-    document.body.style.overflow = 'auto';  
-  }
-}, [showChatbot]);
+
 
   
 
@@ -101,49 +95,54 @@ useEffect(() => {
 
       
       {showChatbot && (
-        <div className="fixed bottom-[90px] right-[35px] w-[340px] h-[340px] bg-white text-black rounded-[15px] shadow-2xl z-30 flex flex-col overflow-hidden">
-          {/* Chat Header */}
-          <div className="flex items-center justify-between px-5 py-3 bg-orange-600 text-white">
-            <div className="flex items-center gap-2">
-              <ChatbotIcon />
-              <h2 className="font-bold">Chatbot</h2>
-            </div>
-            <button
-              onClick={() => setShowChatbot(false)}
-              className="text-2xl font-bold hover:text-orange-200"
-            >
-              ✕
-            </button>
-          </div>
+  <div
+    className="fixed inset-0 sm:inset-auto sm:bottom-[90px] sm:right-[35px] sm:w-[340px] sm:h-[400px] bg-white text-black rounded-none sm:rounded-[15px] shadow-2xl z-50 flex flex-col overflow-hidden"
+  >
+    {/* Chat Header */}
+    <div className="flex items-center justify-between px-5 py-3 bg-orange-600 text-white">
+      <div className="flex items-center gap-2">
+        <ChatbotIcon />
+        <h2 className="font-bold">Chatbot</h2>
+      </div>
+      <button
+        onClick={() => setShowChatbot(false)}
+        className="text-2xl font-bold hover:text-orange-200"
+      >
+        ✕
+      </button>
+    </div>
+
+    {/* Chat Body */}
+    <div
+      ref={chatBodyRef}
+      className="flex-1 flex flex-col gap-4 overflow-y-auto overscroll-contain px-4 py-3 bg-gray-50"
+      onWheel={(e) => e.stopPropagation()}
+      onTouchMove={(e) => e.stopPropagation()}
+    >
+      <div className="flex items-start gap-2">
+        <ChatbotIcon />
+        <p className="bg-orange-100 text-black px-4 py-2 rounded-xl rounded-bl-none max-w-[75%]">
+          hi, hello good morning
+        </p>
+      </div>
+
+      {chatHistory.map((chat, index) => (
+        <ChatMessage key={index} chat={chat} />
+      ))}
+    </div>
+
+    {/* Chat Footer */}
+    <div className="p-3 border-t">
+      <ChatForm
+        chatHistory={chatHistory}
+        setChatHistory={setChatHistory}
+        generateBotResponse={generateBotResponse}
+      />
+    </div>
+  </div>
+)}
 
           
-          <div
-            ref={chatBodyRef}
-            className="flex-1 flex flex-col gap-4 overflow-auto px-4 py-3 bg-gray-50"
-          >
-            
-            <div className="flex items-start gap-2">
-              <ChatbotIcon />
-              <p className="bg-orange-100 text-black px-4 py-2 rounded-xl rounded-bl-none max-w-[75%]">
-                hi, hello good morning
-              </p>
-            </div>
-
-            {chatHistory.map((chat, index) => (
-              <ChatMessage key={index} chat={chat} />
-            ))}
-          </div>
-
-          
-          <div className="p-3 border-t">
-            <ChatForm
-              chatHistory={chatHistory}
-              setChatHistory={setChatHistory}
-              generateBotResponse={generateBotResponse}
-            />
-          </div>
-        </div>
-      )}
     </div>
   );
 };
